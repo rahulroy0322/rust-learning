@@ -27,3 +27,10 @@ data type subsets:
 
 
 if expressions are sometimes called arms
+
+Slices => some part of the data(like substring)
+  <var>[0..5] || <var>[2,3]
+
+
+field init shorthand => is key and value is same just like js/ts
+
