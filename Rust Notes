@@ -1,0 +1,27 @@
+RUST
+
+prelude => imports x
+prelude => global this (ok)
+
+
+::<> => associated function
+.<>() => methode
+& => is a reference(which gives you a way to let multiple parts of your code access one piece of data without needing to copy that data into memory multiple times.)
+
+
+crate => package
+  (binary crate, library crate)
+
+
+
+data type subsets: 
+  scalar:
+    integers (signed integer types start with i instead of u),
+    floating-point numbers (All floating-point types are signed.),
+    Booleans, 
+    and characters
+    
+  and compound:
+    tuples
+    and arrays.
+    
