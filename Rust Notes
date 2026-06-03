@@ -34,3 +34,24 @@ Slices => some part of the data(like substring)
 
 field init shorthand => is key and value is same just like js/ts
 
+
+functions:
+associated functions = static func+ constructor
+
+how to define like (opps)
+struct User {
+    name: String,
+    age: i8,
+}
+
+impl User {
+    fn new(name: String, age: i8) -> Self {//associated function
+        Self { name, age }
+    }
+
+    fn suggest_email(&self) -> String { // methode
+        String::from(format!("{}@example.com", self.name))
+    }
+}
+
+
