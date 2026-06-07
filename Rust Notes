@@ -55,3 +55,32 @@ impl User {
 }
 
 
+
+ENUM is like enum in ts
+define:
+enum IpAddrKind {
+    V4,
+    V6,
+}
+
+with data
+enum IpAddr {
+    V4(String),
+    V6(String),
+}
+
+with diff type data
+enum IpAddr {
+    V4(u8, u8, u8, u8),
+    V6(String),
+}
+
+Option is like <value>|(undedined/null)
+
+uses:
+let x:Option<i8> = Some(10)|None
+
+Paths (file imports):
+absolute path (the full path starting from a crate root) => crate||<name>::(import)
+
+relative path (starts from the current module) => self|| super||<mod name>::(import)
